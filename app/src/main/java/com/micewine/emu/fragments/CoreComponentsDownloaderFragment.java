@@ -212,9 +212,8 @@ public class CoreComponentsDownloaderFragment extends Fragment {
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .url("https://github.com/KreitinnSoftware/MiceWine-Packages/releases/download/default/" + name)
-                .build();
-
+         .url("https://github.com/KreitinnSoftware/MiceWine-Repository/releases/download/MiceWine-Packages/" + name)       
+            .build();
         final float[] megabytesPerSecond = {0};
         final float[] lastBytesRead = {0};
         final long[] lastTimeStamp = {0};
